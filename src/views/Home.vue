@@ -7,11 +7,8 @@
     </p>
   </div>
 </template>
-<script>
-export default {
-  name: "home",
-  data: () => {
-    return {};
-  }
-};
+<script lang="ts">
+import { Vue } from "vue-property-decorator";
+
+export default class Home extends Vue {}
 </script>

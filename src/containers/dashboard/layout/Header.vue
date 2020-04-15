@@ -38,13 +38,10 @@
     </div>
   </el-menu>
 </template>
-<script>
-export default {
-  name: "Header",
-  data: () => {
-    return {
-      activeIndex: "1"
-    };
-  }
-};
+<script lang="ts">
+import { Vue } from "vue-property-decorator";
+
+export default class Header extends Vue {
+  private activeIndex = "1";
+}
 </script>

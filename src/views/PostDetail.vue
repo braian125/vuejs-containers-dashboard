@@ -1,12 +1,11 @@
 <template>
   <div class="container">
-    <h1>No dashboard here</h1>
-    <br />
-    <h3>Put here your login page</h3>
+    <h1>Post details</h1>
+    <p>Post {{$route.params.id}}</p>
   </div>
 </template>
 <script lang="ts">
 import { Vue } from "vue-property-decorator";
 
-export default class Login extends Vue {}
+export default class PostDetail extends Vue {}
 </script>

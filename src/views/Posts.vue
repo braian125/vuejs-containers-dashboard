@@ -8,30 +8,27 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: "Post",
-  data: () => {
-    return {
-      posts: [
-        {
-          id: 1,
-          title: "Post 1"
-        },
-        {
-          id: 2,
-          title: "Post 2"
-        },
-        {
-          id: 3,
-          title: "Post 3"
-        },
-        {
-          id: 4,
-          title: "Post 4"
-        }
-      ]
-    };
-  }
-};
+<script lang="ts">
+import { Vue } from "vue-property-decorator";
+
+export default class Post extends Vue {
+  private posts: Array<object> = [
+    {
+      id: 1,
+      title: "Post 1"
+    },
+    {
+      id: 2,
+      title: "Post 2"
+    },
+    {
+      id: 3,
+      title: "Post 3"
+    },
+    {
+      id: 4,
+      title: "Post 4"
+    }
+  ];
+}
 </script>

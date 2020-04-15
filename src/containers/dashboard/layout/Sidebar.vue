@@ -5,8 +5,6 @@
     background-color="#075e54"
     text-color="#fff"
     active-text-color="#ffffff"
-    @open="handleOpen"
-    @close="handleClose"
     :collapse="isCollapse"
   >
     <el-menu-item index="2">
@@ -41,17 +39,10 @@
     </el-menu-item>
   </el-menu>
 </template>
-<script>
-export default {
-  name: "Sidebar",
-  data: () => {
-    return {
-      isCollapse: true
-    };
-  },
-  methods: {
-    handleOpen() {},
-    handleClose() {}
-  }
-};
+<script lang="ts">
+import { Vue } from "vue-property-decorator";
+
+export default class Sidebar extends Vue {
+  private isCollapse = true;
+}
 </script>

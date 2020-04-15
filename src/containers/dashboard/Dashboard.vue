@@ -11,17 +11,17 @@
     </el-container>
   </el-container>
 </template>
-<script>
-export default {
-  name: "Dashboard",
-  data: () => {
-    return {};
-  },
+<script lang="ts">
+import { Vue, Component } from "vue-property-decorator";
+
+@Component({
   components: {
-    sidebar: () => import(/* webpackChunkName: "sidebar" */ "./layout/Sidebar"),
-    Header: () => import(/* webpackChunkName: "header" */ "./layout/Header")
+    sidebar: () =>
+      import(/* webpackChunkName: "sidebar" */ "./layout/Sidebar.vue"),
+    Header: () => import(/* webpackChunkName: "header" */ "./layout/Header.vue")
   }
-};
+})
+export default class Dashboard extends Vue {}
 </script>
 
 <style scoped>
@@ -31,7 +31,6 @@ export default {
 .el-header {
   padding: 0;
 }
-
 .el-menu {
   border: 0;
 }
