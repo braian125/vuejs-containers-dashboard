@@ -40,7 +40,7 @@
   </el-menu>
 </template>
 <script lang="ts">
-import { Vue } from "vue-property-decorator";
+import Vue from "vue";
 
 export default class Sidebar extends Vue {
   private isCollapse = true;

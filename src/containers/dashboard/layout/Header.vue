@@ -39,7 +39,7 @@
   </el-menu>
 </template>
 <script lang="ts">
-import { Vue } from "vue-property-decorator";
+import Vue from "vue";
 
 export default class Header extends Vue {
   private activeIndex = "1";

@@ -5,7 +5,8 @@
   </div>
 </template>
 <script lang="ts">
-import { Vue } from "vue-property-decorator";
-
-export default class PostDetail extends Vue {}
+import Vue from 'vue'
+export default Vue.extend({
+  
+})
 </script>

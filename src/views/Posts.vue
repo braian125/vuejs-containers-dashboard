@@ -9,9 +9,10 @@
   </div>
 </template>
 <script lang="ts">
-import { Vue } from "vue-property-decorator";
+import Vue from "vue"
 
-export default class Post extends Vue {
+export default class Posts extends Vue {
+  
   private posts: Array<object> = [
     {
       id: 1,
